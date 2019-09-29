@@ -1,13 +1,12 @@
 $(function() {
   var h = $(window).height();
- 
   $('#wrap').css('display','none');
   $('#loader-bg ,#loader').height(h).css('display','block');
 });
  
 $(window).load(function () { //全ての読み込みが完了したら実行
-  $('#loader-bg').delay(1200).fadeOut(800);
-  $('#loader').delay(1000).fadeOut(300);
+  $('#loader-bg').delay(1500).fadeOut(800);
+  $('#loader').delay(1300).fadeOut(300);
   $('#wrap').css('display', 'block');
 });
  
@@ -18,6 +17,6 @@ $(function(){
  
 function stopload(){
   $('#wrap').css('display','block');
-  $('#loader-bg').delay(1200).fadeOut(800);
-  $('#loader').delay(1000).fadeOut(300);
+  $('#loader-bg').delay(1500).fadeOut(800);
+  $('#loader').delay(1300).fadeOut(300);
 }
