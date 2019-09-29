@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+/*font*/
+@font-face {
+  font-family: '851H-kktt_004';
+  src: url('font/851H-kktt_004.ttf');
+}
+
+/*AOS*/
+.data-aos{
+  z-index: 1;
+}
+
+/*Smooth scrool bar*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+  font-size:1.2rem;
+}
+
+h1,h2,h3,.sidenav{
+  font-family: '851H-kktt_004';
+}
+
+.gridtop-10px,.height-10px{
+  margin-top: 10px;
+}
+
+.gridtop-20px,.height-20px{
+  margin-top: 20px;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  height: 80px;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.title {
+  flex: 100%;
+  text-align: center;
+  border-top:20px solid black; 
+  border-left:50px solid black; 
+  border-right:50px solid black; 
+  border-bottom:20px solid black; 
+}
+
+.side1,.side2{
+  flex: 40%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fake image, just for this example */
+.img1 {
+  width: 100%;
+  padding: 20px;
+}
+
+.main1,.main2{
+  flex: 60%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex: 100%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.img2 {
+  width: 100%;
+  padding: 20px;
+}
+
+/*picture*/
+.picture1{
+  background-image: url("img/factory.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.picture2{
+  background-image: url("img/webdesign.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.picture3{
+  background-image: url("img/android.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.picture4{
+  background-image: url("img/office.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.picture5{
+  background-image: url("img/backend.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.picture6{
+  background-image: url("img/frontend.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* table */
+.table {
+  border-collapse: collapse;
+  background-color:#D9EB4B;
+}
+.table th, .table td {
+  border: 2px solid #00A9FE;
+  padding:10px;
+  font-size: smaller;
+}
+
+.tr-center{
+  text-align:center; 
+}
+
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  color:white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  body{
+    font-size:0.8rem;
+  }
+  
+  .main1,.main2{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .side2{
+    padding-top: 0px;
+  }
+  
+  .gridtop-10px,.gridtop-20px{
+    margin-top:0px;
+  }
+  
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,86 @@
+.menu-icon{
+  font-family: 'serif';
+  font-size:26px;
+  color: white;
+  text-align: center;
+  cursor:pointer;
+  width: 50px;
+  background-color: black;
+  position:fixed;
+  margin-top: 20px;
+  z-index:5;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover{
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 
+  0 0 20px rgba(38, 149, 255, 0.5),
+  0 0 40px white, 
+  0 0 100px white, 
+  0 0 200px white,
+  0 0 300px white,
+  0 0 500px white;
+  -webkit-animation: buzz 0.01s infinite alternate;
+          animation: buzz 0.01s infinite alternate;
+}
+
+/*neon anime*/
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+ 
+@keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  cursor:pointer;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+

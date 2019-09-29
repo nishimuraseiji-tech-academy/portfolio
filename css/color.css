@@ -1,0 +1,94 @@
+/*background color*/
+.lime{
+    background-color: #01FFC3;
+}
+
+.lime-hover:hover{
+  color:#01FFC3;
+}
+
+.pink{
+    background-color: #FFB3FD;
+}
+
+.pink-hover:hover{
+  color:#FFB3FD;
+}
+
+.orange{
+    background-color: #FEC763;
+}
+
+.orange-hover:hover{
+  color:#FEC763;
+}
+
+.skyblue{
+    background-color: #A0EDFE;
+}
+
+.skyblue-hover:hover{
+  color:#A0EDFE;
+}
+
+.purple{
+    background-color: #9D72FF;
+}
+
+.purple-hover:hover{
+  color: #9D72FF;
+}
+
+.white-hover:hover{
+  color: white;
+}
+
+.black{
+    background-color:black;
+}
+
+/*marker_animetion(url link hover)*/
+.green_line , .orange_line, .pink_line{
+text-decoration: none;
+position: relative;
+display: inline-block;
+}
+ 
+.green_line:after , .orange_line:after, .pink_line:after{
+position: absolute;
+bottom: -2px;
+left: 0;
+content: '';
+width: 0;
+height: 3px;
+transition: .3s; /*時間の指定*/
+}
+
+.green_line{
+  color: #13CA91;
+}
+
+.orange_line{
+  color: #FF8B8B;
+  font-weight: bold;
+}
+
+.pink_line{
+  color: #FF61BE;
+}
+
+.green_line:after{
+  background-color: #13CA91; /*緑の線*/
+}
+
+.orange_line:after{
+  background-color: #FF8B8B; /*オレンジの線*/
+}
+
+.pink_line:after{
+  background-color: #FF61BE; /*ピンクの線*/
+}
+ 
+.green_line:hover::after , .orange_line:hover::after, .pink_line:hover::after{
+width: 100%; /*０だった幅を100%にする。*/
+}

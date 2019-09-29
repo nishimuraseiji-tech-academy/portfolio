@@ -1,0 +1,135 @@
+/* カルーセルの表示エリア */
+.carousel {
+  /* 子要素でposition:absoluteを使うために必要 */
+  position: relative;
+
+  /* 400x400の領域からはみ出た部分は非表示 */
+  overflow: hidden;
+  width: 400px;
+  height: 350px;
+
+  /* 左右中央寄せ */
+  margin: 0 auto;
+}
+
+/* 矢印の基本スタイル */
+.carousel-control {
+  display: block;
+  height: 40px;
+  width: 35px;
+  background-color:black;
+  color: #1FFFFF;
+  border: solid 2px #1FFFFF;
+  line-height:40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  opacity: .5;
+
+  /* 透明度をふわっと変える演出 */
+  transition: opacity .15s;
+  
+  margin-left : 10px;
+  margin-right: 10px;
+}
+
+/* マウスが乗ったら濃くする */
+.carousel-control:hover {
+  opacity: .8;
+  
+  /*ネオンエフェクト追記*/
+  color: #1FFFFF;
+  background-color: black;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(3,0,128, 0.3), 
+    0 0 7px 2px rgba(0,208,255, 0.6), 
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(3,0,128, 0.3), 
+    inset 0 0 7px 2px rgba(0,208,255, 0.6);
+  animation: flickering 5s infinite;
+}
+
+/* 左矢印 */
+.carousel-control-prev {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  text-indent: -2px;  /* 矢印の横方向の位置を調整する */
+}
+
+/* 右矢印 */
+.carousel-control-next {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  text-indent: 2px;
+}
+
+/* スライドのul */
+.slides {
+  /* .carouselの左上隅に表示 */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* 横に長いひと続きの写真にする */
+  width: 99999px;
+
+  /* ulのデフォルトスタイルを消去 */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* 各スライドを横につなげる */
+.slides li {
+  float: left;
+  width: 400px;
+  height:350px;
+}
+
+/*ネオンエフェクト用アニメ*/
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  2% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  8% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  28% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  36% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  100% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+}

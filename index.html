@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/back-to-top.css">
+
+  <!-- Loading animation -->
+  <link rel="stylesheet" href="css/loading-anime.css">
+
+  <!-- neon effect -->
+  <link rel="stylesheet" href="css/neon-hover1.css">
+  <link rel="stylesheet" href="css/neon-button1.css">
+
+  <!-- sidebar -->
+  <link rel="stylesheet" href="css/sidenav.css">
+  <script type="text/javascript" src="js/sidebar.js"></script>
+ 
+  <!-- accordion -->
+  <link rel="stylesheet" href="css/accordion.css">
+
+  <!-- carousel -->
+  <link rel="stylesheet" href="css/carousel.css">
+
+  <!-- [AOS] jquery/css読み込み-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- footer -->
+  <link rel="stylesheet" href="css/footer.css">
+  
+</head>
+
+<!--Loading animation-->
+<div id="loader-bg">
+  <div class="load-neon" id="loader">
+    <h1>Now Loading...</h1>
+  </div>
+</div>
+<div id="wrap">
+
+<!-- Header -->
+<div class="header black" id="home">
+  <div class="items link link1">
+    <h1>西村誠之 ポートフォリオサイト</h1>
+  </div>
+</div>
+
+<!-- Navigation Bar -->
+<div id="mySidenav" class="sidenav">
+  <a ref="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="white-hover" href="#home">ホーム</a>
+  <a class="lime-hover" href="#about">略歴</a>
+  <a class="orange-hover" href="#experiment">経験</a>
+  <a class="pink-hover" href="#knowledge">知識</a>
+  <a class="skyblue-hover" href="#pastime">趣味</a>
+  <a class="purple-hover" href="#contact">問い合わせ</a>
+  <!-- Back to top button -->
+</div>
+<p class="back-to-top">▲</p>
+<span class="menu-icon neon2" onclick="openNav()">&#9776;</span>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="title lime" id="about">
+    <h1>略歴</h1>
+  </div>
+  
+  <div class="side1 lime">
+    <div class="gridtop-10px"></div>
+    <div class="gridtop-20px"></div>
+        <div class="img2 picture1" style="height:250px;"></div>
+    <div class="height-20px"></div>
+        <div class="img2 picture2" style="height:250px;"></div>
+  </div>
+  
+  <div class="main1 lime">
+    <h3>(1) 機械メーカーの製造スタッフ [約5年経験]</h3>
+    <p>2012年:地元の高等専門学校（電気電子科）を卒業</p>
+    <p>2012~2016年:紡績機械のメーカーに就職.製造の業務を経験.</p>
+    <p>2017年(冬~春):半導体製造装置のメーカーに転職.生産管理の業務を経験.</p>
+    <hr>
+    <h3>(2) プログラマーに転向 [約1年経験]</h3>
+    <p>2017年(秋)~2018年(春):フリーランスのプログラマになる.スマホアプリを開発.</p>
+    <p>2019年(冬)~2020年(春):サーバーサイドのプログラマになる.開発とテストを経験.</p>
+    <hr>
+    <h3>(3) Webデザイナーに転向予定</h3>
+    <p>2020年(秋)~現在:目標をフロントエンドエンジニアに変更.</p>
+    <p>Webデザイナーの業務ができるように勉強中.</p>
+  </div>
+  
+  <div class="title orange" id="experiment">
+    <div data-aos="zoom-in"
+         data-aos-duration="1000">
+      <h1>経験</h1>
+    </div>
+  </div>
+  <div class="main2 orange">
+    <div data-aos="fade-right"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-sine">
+      <h2>1.Androidアプリ開発</h2>
+      <h4>知り合いの事業主から指導を頂き、約6カ月の開発経験.</h4>
+      <p>・AndroidSDKの使用</p>
+      <a href="#"><div class="orange_line">
+        ・実際に制作した内容(urlリンク掲載予定...)</div></a>
+      <hr>
+    </div>
+    <div data-aos="fade-right"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-sine">
+      <h2>2.地方自治体向けソフトウェア開発</h2>
+      <h4>開発現場での経験は皆無でしたが、以下を3カ月経験.</h4>
+      <p>・バージョン管理ツール[tortoiseSVN]の使用</p>
+      <p>・ListCreatorを使った帳票の作成</p>
+      <p>・PLSQLを使ったViewの作成</p>
+      <p>・ソフトウェアの単体、結合テスト</p>
+    </div>
+  </div>
+
+  <div class="side2 orange">
+    <div class="gridtop-10px"></div>
+    <div class="data-aos"
+         data-aos="fade-left"
+         data-aos-duration="1000">
+      <div class="img2 picture3" style="height:250px;"></div>
+    </div>
+    <div class="height-20px"></div>
+    <div class="data-aos"
+         data-aos="fade-left"
+         data-aos-duration="1000">
+      <div class="img2 picture4" style="height:300px;"></div>
+    </div>  
+  </div>
+  
+  <div class="title pink" id="knowledge">
+    <div data-aos="zoom-in"
+         data-aos-duration="1000">
+      <h1>知識</h1>
+    </div>
+  </div>
+  <div class="side1 pink">
+    <div class="gridtop-20px"></div>
+    <div data-aos="fade-right"
+         data-aos-duration="1000">
+      <div class="img2 picture5" style="height:300px;"></div>
+    </div>
+    <div class="height-20px"></div>
+    <div data-aos="fade-right"
+         data-aos-duration="1000">
+      <div class="img2 picture6" style="height:350px;"></div>
+    </div>
+  </div>
+  
+  <div class="main1 pink">
+    <div data-aos="fade-left"
+         data-aos-duration="1000">
+      <h2>通信教育：2019年7月～2019年10月</h2>
+      <h4>次のソフトウェア開発現場に向けて勉強していました.<h4>
+      <p>1:サーバーサイドの勉強（1カ月半）:php/Laravel</p>
+      <div class="accordion">
+      <section class="color-1">
+        <h2 class="accordion-title"><a href="#">スキル</a></h2>
+        <!-- コンテンツを最初から表示する場合はaccordion-content-activeクラスを付ける -->
+        <div class="accordion-content">
+          <div class="inner">
+            <div class="center">
+              <table class="table">
+                <tr><td>言語</td><td>PHP、HTML5、CSS3</td></td></tr>
+                <tr><td>開発環境</td><td>Cloud9、Linux、Heroku、git/GitHub</td></td></tr>
+                <tr><td>DB</td><td>MySQL</td></td></tr>
+                <tr><td>フレームワーク</td><td>Laravel、Bootstrap</td></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="color-2">
+        <h2 class="accordion-title"><a href="#">学習内容</a></h2>
+        <div class="accordion-content">
+          <div class="inner">
+            <div class="center">
+              <table class="table">
+                <tr class="tr-center"><td colspan=2>1:HTML/CSSの基本</td></tr>
+                <tr class="tr-center"><td colspan=2>2:ターミナルの基本</td></tr>
+                <tr class="tr-center"><td colspan=2>3:PHPの基礎</td></tr>
+                <tr><td>- 文法の基礎</td><td>- Webサーバを起動してPHPを自動実行</td></tr>
+                <tr><td>- フォームデータの送受信</td><td>- オブジェクト</td></tr>
+                <tr><td>- 複数ファイルの連携</td><td>- 名前空間・MySQLの基礎</td></tr>
+                <tr><td>- データベースの作成</td><td>- テーブルの作成/操作/分析/結合</td></tr>
+                <tr class="tr-center"><td colspan=2>4:PHP+MySQL</td></tr>
+                <tr><td>- PHPとMySQLの連携</td><td>- BookListの作成</td></tr>
+                <tr class="tr-center"><td colspan=2>5:Git/GitHubの基本</td></tr>
+                <tr class="tr-center"><td colspan=2>6:Bootstrapの使用</td></tr>
+                <tr class="tr-center"><td colspan=2>7:Laravelでの開発</td></tr>
+                <tr class="tr-center"><td colspan=2>8:Herokuの使用</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="color-3">
+        <h2 class="accordion-title"><a href="#">開発/制作実績</a></h2>
+        <div class="accordion-content">
+          <div class="inner">
+            <div class="center">
+              <table class="table">
+                <tr><td>1:メッセージボード</td></td><td>2:Twitterクローン</td></td></tr>
+                <tr class="tr-center"><td colspan=2>3:オリジナルアプリ：家計簿アプリ</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+    <div data-aos="fade-left"
+         data-aos-duration="1000">
+    <h4>2:フロントエンドの勉強（1カ月半）</h4>
+    <div class="accordion">
+      <section class="color-1">
+        <h2 class="accordion-title">
+            <a href="#">スキル</a>
+        </h2>
+        <!-- コンテンツを最初から表示する場合はaccordion-content-activeクラスを付ける -->
+        <div class="accordion-content">
+          <div class="inner">
+            <div class="center">
+              <table class="table">
+                <tr><td>言語</td><td>JavaScript、HTML5、CSS3</td></td></tr>
+                <tr><td>開発環境</td><td>Cloud9</td></td></tr>
+                <tr><td>フレームワーク</td><td>jQuery, Bootstrap</td></td></tr>
+                <tr><td>その他</td><td>Web API(Flicker API) + Ajax</td></td></tr>
+              </table>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section class="color-2">
+        <h2 class="accordion-title"><a href="#">学習内容</a></h2>
+        <div class="accordion-content">
+          <div class="inner">
+            <div class="center">
+              <table class="table">
+                <tr><td>1:Webサイト制作の流れ</td><td>2:HTML/CSSの基本</td></td></tr>
+                <tr><td>3:JavaScriptの文法</td><td>4:エラーとデバッグ</td></tr>
+                <tr><td>5:jQueryの基本</td><td>6:DOMの操作</td></tr>
+                <tr><td>7:Bootstrapの使用</td><td>8:外部ライブラリの利用</td></tr>
+                <tr class="tr-center"><td colspan=2>9:Web API</td></tr>
+              </table>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section class="color-3">
+        <h2 class="accordion-title"><a href="#">開発/制作実績</a></h2>
+        <div class="accordion-content">
+          <div class="inner">
+            <div class="center">
+              <table class="table">
+                <tr><td>1:Web電卓の作成</td><td>2:ポートフォリオサイト（20日間）</td></td></tr>
+              </table>
+            </div>
+          </div>  
+        </div>
+      </section>
+    </div>
+    <hr>
+    <h2>専門学校：2019年10月～</h2>
+    <h4>フロントエンドエンジニアを目標としたい為、デザインを勉強予定.<h4>
+    <p>Webデザイナーになる予定.<p>
+    </div>
+  </div>
+  <div class="bottom pink">
+  </div>
+  
+  <div class="title skyblue" id="pastime">
+    <div data-aos="flip-down"
+         data-aos-duration="1000">
+    <h1>趣味</h1>
+    </div>
+  </div>
+  <div class="main2 skyblue">
+    <div data-aos="flip-down"
+         data-aos-duration="1500">
+      <h2>料理</h2>
+      <h4>最近、タコライスを作ることに没頭してます.<h4>
+      <p>基本的にはウェブサイトのレシピ通り作りますが、</p>
+      <p>身近にあるものでアレンジすることもあります.</p>
+      <p>得意料理は、親子丼とカルボナーラです.</p>
+      <p><div class="green_line">(ブログ掲載予定)</div></p>
+    </div>
+  </div>
+  <div class="side2 skyblue">
+    <div class="gridtop-20px"></div>
+    <div class="gridtop-20px"></div>
+    <div data-aos="flip-down"
+         data-aos-duration="1500">
+      <!--カルーセルスライダー(料理の写真載せる)-->
+      <div class="carousel">
+        <ul class="slides">
+          <li><img src="img/img1.jpg" width="400" height="400" alt="Image 1"></li>
+          <li><img src="img/img2.jpg" width="400" height="400" alt="Image 2"></li>
+          <li><img src="img/img3.jpg" width="400" height="400" alt="Image 3"></li>
+          <li><img src="img/img4.jpg" width="400" height="400" alt="Image 4"></li>
+        </ul>
+        <a href="#" class="carousel-control carousel-control-prev inactive">&lt;</a>
+        <a href="#" class="carousel-control carousel-control-next inactive">&gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="title purple" id="contact">
+    <div data-aos="zoom-in"
+         data-aos-duration="1000">
+      <h1>問い合わせ</h1>
+    </div>
+  </div>
+  <div class="main purple">
+    <h2>何かあれば、気楽にどうぞ.</h2>
+    <h5>nishimuraseiji101@yahoo.co.jp</h5>
+  </div>
+</div><!--end row-->
+
+<!-- Footer -->
+<div class="footer black">
+  <p class="link link1">©西村誠之 ポートフォリオサイト</p>
+</div>
+
+</div><!-- This div tag need for loading anime.-->
+
+
+<!--loading javascript-->
+<!--AOS読み込みはheadタグ内は上手くいかなかった-->
+<script>
+  AOS.init();
+</script>
+
+<!-- back-to-top -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/back_to_top.js"></script>
+
+<!-- loading anime -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/loading-anime.js"></script>
+
+<!-- accordion -->
+<script type="text/javascript" src="js/accordion.js"></script>
+
+<!-- carousel -->
+<script type="text/javascript" src="js/carousel.js"></script>
+
+</body>
+</html>

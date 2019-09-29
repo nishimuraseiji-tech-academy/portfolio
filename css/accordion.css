@@ -1,0 +1,59 @@
+/* アコーディオンのタイトル部分 */
+.accordion-title {
+  margin: 0;
+  font-size: 1rem;
+}
+.accordion-title a {
+  display: block;
+  padding: 6px;
+  
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* アコーディオンのコンテンツ部分 */
+.accordion-content {
+  /* 初期状態では非表示 */
+  display: none;
+  height:auto;
+  padding: 12px 6px;
+  text-align:center;
+}
+
+.inner{
+  display:inline-block;
+}
+
+.center{
+  text-align:center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* accordion-content-activeクラスが付いているものは初期状態で表示しておく */
+.accordion-content.accordion-content-active {
+  display: block;
+}
+
+/*border-color*/
+.color-1{
+  border: 1px solid #FF85EA;
+  background-color: #FF85EA;
+}
+
+.color-2{
+  border: 1px solid #FF61BE;
+  background-color: #FF61BE;
+}
+
+.color-3{
+  border: 1px solid #F148FB;
+  background-color: #F148FB;
+}
+
+.color-1:hover,.color-2:hover,.color-3:hover{
+  background-color:#75D5FD;
+  transition-duration: 1s;
+  transition-timing-function:ease-in-out;
+}
